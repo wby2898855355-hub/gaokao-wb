@@ -1,0 +1,70 @@
+.header {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 16px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text) !important;
+  letter-spacing: 1px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar-small {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eee;
+}
+
+.user-nickname {
+  font-size: 14px;
+  color: var(--text-secondary);
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn-login, .btn-logout {
+  font-size: 13px;
+  padding: 5px 12px;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+.btn-login {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+.btn-login:hover { opacity: 0.85; }
+.btn-logout:hover { color: var(--text); border-color: #ccc; }

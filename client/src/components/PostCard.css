@@ -1,0 +1,85 @@
+.post-card {
+  transition: box-shadow 0.2s;
+}
+.post-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.post-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.post-card-meta .avatar-small {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eee;
+  flex-shrink: 0;
+}
+
+.post-card-meta .meta-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.post-card-meta .meta-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.post-card-meta .nickname {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.post-card-meta .nickname-anon {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.post-card-meta .time {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.post-card-body {
+  display: block;
+  color: var(--text) !important;
+  text-decoration: none;
+}
+
+.post-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.post-card-preview {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.post-card-actions {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.btn-edit {
+  font-size: 12px;
+  color: var(--primary);
+  background: none;
+  padding: 4px 0;
+}
+.btn-edit:hover { opacity: 0.7; }
